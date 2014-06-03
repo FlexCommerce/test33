@@ -2,80 +2,89 @@
 
 {% block content %}
 
-<header class="bk-header clearfix">
-    <div class="logo-wrap">
-         <div class="wrapper clearfix">
-            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}      
-        </div>
+<header class="bk-header">
+  <div class="clearfix logo-sz">
+    <div class="wrapper">
+      <div class="companyheader clearfix">
+        {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+      </div>
     </div>
+  </div>
+  <div class="clearfix menu-sz">
+    <nav class="wrapper clearfix nav-sz">
+      {{widget('extendednavigation', 'navigationheader', {})|raw}}
+    </nav>
+  </div>
 </header>
-<section>
-  {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': false})|raw}}
-</section>
-<div class="wrapper clearfix menu-sz">
-  <nav class="sz-nav">
-    {{widget('extendednavigation', 'navigationheader', {})|raw}}
-  </nav>
-</div>
 <div class="main wrapper clearfix">
-    <section class="homemaintext-sz clearfix">
-        {{widget('content', 'maintextheader', {"content":"<h2>wellcome!</h2>"})|raw}}
-        {{widget('content', 'maintextcontent', {"content":"<p>Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend</p>"})|raw}}
-    </section>
-    <section class="clearfix">
-        <div class="clearfix">
-            <div class="widget responsivecolumns columns-two-50-50">
-                <div class="column columns-two-left offer">
-                    {{widget('image', 'office-image', { 'src': asset('images/atr.png'), 'alt': '', 'fileName': 'atr.png', 'fileSize': '3kb', 'imageSize': '427px x 99px', 'imageWidth': '427px'})|raw}}
-                    {{widget('content', 'office-header', {"content":"<h2>Our office.</h2>"})|raw}}
-                    {{widget('content', 'office-content', {"content":"<p>Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend</p>"})|raw}}
-                    {{widget('button', 'office-button2', {text:'show more', 'align':'widget-align-right'})|raw}}
+    <section class="main-img-wrap clearfix">
+            <div class="widget responsivecolumns columns-two-50-50 front-s">
+                <div class="column columns-two-left front-s1">
+                    {{widget('image', 'front-image', { 'src': asset('images/foto-main.png'), 'alt': '', 'fileName': 'foto-main.png', 'fileSize': '165kb', 'imageSize': '480px x 320px', 'imageWidth': '480px'})|raw}}
                 </div>
-                <div class="column columns-two-right benefits">
-                    {{widget('image', 'people-image', { 'src': asset('images/atr.png'), 'alt': '', 'fileName': 'atr.png', 'fileSize': '3kb', 'imageSize': '427px x 99px', 'imageWidth': '427px'})|raw}}
-                    {{widget('content', 'people-header', {"content":"<h2>Our people.</h2>"})|raw}}
-                    {{widget('content', 'people-content', {"content":"<p>Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend</p>"})|raw}}
-                    {{widget('button', 'people-button2', {text:'show more;', 'align':'widget-align-right'})|raw}}
+                <div class="column columns-two-right front-s2">                    
+                    {{widget('content', 'front-header', {"content":"<h2>Our people.</h2>"})|raw}}
+                    {{widget('content', 'front-content', {"content":"<p>Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend</p>"})|raw}}
+                    {{widget('button', 'front-button', {text:'read more', 'align':'widget-align-center'})|raw}}
                 </div>
             </div>
-        </div>        
     </section>
-    <section class="listintext-sz clearfix">
-        {{widget('content', 'listintextheader', {"content":"<h2>Who we are?</h2>"})|raw}}
-        {{widget('content', 'listintextcontent', {"content":"<p>Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend</p>"})|raw}}
-    </section> 
+    <section class="homemaintext-sz clearfix">
+        {{widget('content', 'maintextheader', {"content":"<h3>wellcome!</h3>"})|raw}}
+        {{widget('content', 'maintextcontent', {"content":"<p>Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend</p>"})|raw}}
+        {{widget('button', 'button2', {text:'read more', 'align':'widget-align-right'})|raw}}
+    </section>
+    <section class="main-img-wrap clearfix">
+            <div class="widget responsivecolumns columns-three-33-34-33 about-s">
+                <div class="column columns-three-left about-s1">
+                    {{widget('image', 'about-image1', { 'src': asset('images/img1.png'), 'alt': '', 'fileName': 'img1.png', 'fileSize': '165kb', 'imageSize': '290px x 289px', 'imageWidth': '290px'})|raw}}
+                    {{widget('content', 'about-header1', {"content":"<h2>Our people.</h2>"})|raw}}
+                    {{widget('content', 'about-content1', {"content":"<p>Aliquam erat ac ipsum. Integer aliquam purus.Aliquam erat ac ipsum. Integer aliquam purus.</p>"})|raw}}
+                    {{widget('button', 'about-button1', {text:'read more', 'align':'widget-align-center'})|raw}}
+                </div>
+                <div class="column columns-three-middle about-s2">                    
+                    {{widget('image', 'about-image2', { 'src': asset('images/img2.png'), 'alt': '', 'fileName': 'img2.png', 'fileSize': '165kb', 'imageSize': '290px x 289px', 'imageWidth': '290px'})|raw}}
+                    {{widget('content', 'about-header2', {"content":"<h2>Our people.</h2>"})|raw}}
+                    {{widget('content', 'about-content2', {"content":"<p>Aliquam erat ac ipsum. Integer aliquam purus. Aliquam erat ac ipsum. Integer aliquam purus.</p>"})|raw}}
+                    {{widget('button', 'about-button2', {text:'read more', 'align':'widget-align-center'})|raw}}
+                </div>
+                <div class="column columns-three-right about-s3">                    
+                  {{widget('image', 'about-image3', { 'src': asset('images/img3.png'), 'alt': '', 'fileName': 'img3.png', 'fileSize': '165kb', 'imageSize': '290px x 289px', 'imageWidth': '290px'})|raw}}
+                    {{widget('content', 'about-header3', {"content":"<h2>Our people.</h2>"})|raw}}
+                    {{widget('content', 'about-content3', {"content":"<p>Aliquam erat ac ipsum. Integer aliquam purus. Aliquam erat ac ipsum. Integer aliquam purus.</p>"})|raw}}
+                    {{widget('button', 'about-button3', {text:'read more', 'align':'widget-align-center'})|raw}}
+                </div>
+            </div>
+    </section>
     {{zone('main')|raw}}
 </div>
 <footer class="bk-footer">
     <div class="wrapper clearfix">
-                {{widget('content', 'contactformheader', {"content":"<h2>Contact us</h2>"})|raw}}
+                {{widget('content', 'contactformheader', {"content":"<h3>Contact us</h3>"})|raw}}
                 {{widget('content', 'contactformcontent', {"content":"<p>Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend</p>"})|raw}}
-                {{widget('contactform', 'contactform', {'text': 'Send;','formTitle': 'Contact Form', 'email': 'profile'})|raw}}
+                {{widget('map', 'mymap', {'height': '355', 'zoom': '15', 'address': 'profile'})|raw}}                
     </div>
-    <div class="wrapper clearfix">
-        <div class="responsivecolumns columns-four-25-25-25-25">
-            <div class="column columns-four-first f-phone">
-                {{widget('profile', 'f-phone', { 'profileType':'phone', 'phone':'profile'})|raw}}                            
-            </div>
-            <div class="column columns-four-second f-mail">
-                {{widget('profile', 'f-mail', { 'profileType':'email', 'email':'profile'})|raw}}
-            </div>
-            <div class="column columns-four-third f-address">
-                {{widget('profile', 'f-address', { 'profileType':'address', 'address':'profile'})|raw}}
-            </div>
-            <div class="column columns-four-fourth f-time">
-                {{widget('content', 'f-time', {content: 'pon-pt : 8:00-17:00', lines: 'all'})|raw}}
-            </div>            
-        </div>            
+    <div class="widget wrapper responsivecolumns columns-two-25-75 foot-s">
+      <div class="column columns-two-left foot-s1">
+        {{widget('content', 'f-address-t', {"content":"<h3>Address</h3>"})|raw}}
+        {{widget('profile', 'f-address', { 'profileType':'address', 'address':'profile'})|raw}}
+        {{widget('content', 'f-phone-t', {"content":"<h3>Phone</h3>"})|raw}}
+        {{widget('profile', 'f-phone', { 'profileType':'phone', 'phone':'profile'})|raw}}
+        {{widget('content', 'f-mail-t', {"content":"<h3>Email</h3>"})|raw}}
+        {{widget('profile', 'f-mail', { 'profileType':'email', 'email':'profile'})|raw}}
+        {{widget('content', 'f-open-t', {"content":"<h3>Open</h3>"})|raw}}
+        {{widget('content', 'f-open', {"content":"<p>8:00 - 20:00</p>"})|raw}}
+      </div>
+      <div class="column columns-two-right foot-s2">
+        {{widget('contactform', 'contactform', {'text': 'Send mail','formTitle': 'Contact Form', 'email': 'profile'})|raw}}
+      </div>
     </div>
 </footer>
 <section>
   <div class="copy-sz">
-    <div class="wrapper clearfix">
-        {{widget('image', 'headercolumn3image', { 'src': asset('images/logo-footer.png'), 'alt': 'logo', 'fileName': 'logo-footer.png', 'fileSize': '3kb', 'imageSize': '53px x 23px', 'imageWidth': '53px'})|raw}}
-    </div>
     <div class="wrapper clearfix f-socialicons">
-        {{widget('profile', 'f-socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+      {{widget('content', 'copy-s1', {"content":"<p>Infinite 2014  all rights reserved</p>"})|raw}}
+      {{widget('profile', 'f-socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
     </div>
   </div>
 </section>
