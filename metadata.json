@@ -1,7 +1,7 @@
 {
-    "name":"LogiFlex",
-    "thumbnail":"test33.png",
-    "screenshot":"test33.png",
+    "name":"cleo",
+    "thumbnail":"cleo.png",
+    "screenshot":"cleo.png",
     "templateType":"general",
     "pageTypes":["default","home"],
     "tags": {
@@ -11,12 +11,12 @@
     {
         "Swatch 1": {
             "color1":"#ffffff",
-            "color2":"#919191",
-            "color3":"#232323",
-            "color4":"#919191",
-            "color5":"#f0542c",
-            "color6":"#151515",
-            "color7":"#72787b"
+            "color2":"#627585",
+            "color3":"#1f2b35",
+            "color4":"#273744",
+            "color5":"#ff8a19",
+            "color6":"#516372",
+            "color7":"#fcfcfc"
         }
     },
     "fontSwatch": {
