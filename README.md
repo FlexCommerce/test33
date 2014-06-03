@@ -1,4 +1,5 @@
-mysuperflat
+Cleo
+
 =================
 
-An essentials template for BaseKit development
+BaseKit's Template by FlexCommerce
